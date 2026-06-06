@@ -44,7 +44,7 @@ for i in range(idx,len(array)-1):
 array.pop() # it is used to pop the last duplicate element of the array. 
 print("new array is:", array)
 """
-
+"""
 # find average of the elements of the array 
 array = [10,23,34,56,67,88,99,90]
 sum = 0
@@ -52,3 +52,14 @@ for i in range(len(array)):
     sum = sum + array[i] 
 avg = sum /len(array)
 print("average of array is: ",avg)
+"""
+
+# LEETCODE TWO SUM PROBLEM : 
+nums = [2,7,11,15]
+target = 9
+seen = {} 
+for i in range(len(nums)):
+    number = target - nums[i]
+    if number in seen:
+        print(seen[number],i)
+    seen[nums[i]] = i
