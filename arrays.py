@@ -53,7 +53,7 @@ for i in range(len(array)):
 avg = sum /len(array)
 print("average of array is: ",avg)
 """
-
+"""
 # LEETCODE TWO SUM PROBLEM : 
 nums = [2,7,11,15]
 target = 9
@@ -63,3 +63,16 @@ for i in range(len(nums)):
     if number in seen:
         print(seen[number],i)
     seen[nums[i]] = i
+"""
+
+# LEETCODE MAXIMUM SUBARRAY PROBLEM.
+nums = [-2,1,-3,4,-1,2,1,-5,4]
+current_sum = 0
+max_sum = nums[0]
+for i in range(len(nums)):
+    current_sum += nums[i]
+    max_sum = max(max_sum,current_sum)
+    if current_sum < 0:
+        current_sum = 0
+print(max_sum)
+
