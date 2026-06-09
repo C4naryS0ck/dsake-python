@@ -76,7 +76,7 @@ for i in range(len(nums)):
         current_sum = 0
 print(max_sum)
 """
-
+"""
 # PLUS ONE PROBLEM 
 digits = [9,9]
 for i in range(len(digits)-1,-1,-1):
@@ -86,3 +86,20 @@ for i in range(len(digits)-1,-1,-1):
         print(digits) 
     digits[i] = 0
 print([1] + digits) 
+"""
+
+
+# SUBARRAY SUM EQUALS K 
+nums = [1,2,3] 
+k = 2
+n = len(nums)
+count = 0
+for i in range(n):
+    curr_sum = 0
+    for j in range(i,n):
+        curr_sum += nums[j]
+        if curr_sum == k:
+            count += 1
+print(count) 
+# the above is the broken algorithm not the correct one. I failed to 
+# understand the correct one. I am sorry
