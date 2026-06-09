@@ -76,3 +76,13 @@ for i in range(len(nums)):
         current_sum = 0
 print(max_sum)
 """
+
+# PLUS ONE PROBLEM 
+digits = [9,9]
+for i in range(len(digits)-1,-1,-1):
+    if digits[i] <9 :
+        digits[i] += 1
+        print(digits[i])
+        print(digits) 
+    digits[i] = 0
+print([1] + digits) 
