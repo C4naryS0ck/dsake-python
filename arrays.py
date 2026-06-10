@@ -87,8 +87,7 @@ for i in range(len(digits)-1,-1,-1):
     digits[i] = 0
 print([1] + digits) 
 """
-
-
+"""
 # SUBARRAY SUM EQUALS K 
 nums = [1,2,3] 
 k = 2
@@ -102,4 +101,16 @@ for i in range(n):
             count += 1
 print(count) 
 # the above is the broken algorithm not the correct one. I failed to 
-# understand the correct one. I am sorry
+# understand the correct one. I am sorry 
+"""
+"""
+# REMOVE DUPLICATES FROM SORTED ARRAY 
+nums = [1,1,2]
+i = 0
+for j in range(1, len(nums)):
+    if nums[i] != nums[j]: 
+        i = i + 1
+        nums[i] = nums[j]  
+print(nums) 
+print(i+1)
+"""
