@@ -114,3 +114,29 @@ for j in range(1, len(nums)):
 print(nums) 
 print(i+1)
 """
+"""
+# ROTATE ARRAY - d Positions to the right. 
+nums = [1,2,3,4,5,6,7]
+k = 3
+for _ in range(k):
+    last = nums[len(nums) -1 ]
+    for i in range(len(nums)-1,0,-1): 
+        nums[i] = nums[i-1]
+    nums[0] = last
+print(nums)
+
+"""
+
+
+
+arr = [[6, 8], [1, 3], [2, 4], [9, 10]]
+arr.sort()
+res = []
+res.append(arr[0])
+print(arr)
+print(res)
+
+for i in range(1,len(arr)):
+    last = res[-1]
+    curr = arr[i] 
+    
