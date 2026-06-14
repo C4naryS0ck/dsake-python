@@ -127,16 +127,14 @@ print(nums)
 
 """
 
+nums1 = [1,2,3,0,0,0] 
+nums2 = [2,5,6]
+nums1 = nums1+nums2
+print(nums1) 
+nums1.sort()
+print(nums1) 
+for i in range(len(nums1)-1,-1,-1):
+    if nums1[i] == 0:
+        del nums1[i]
 
-
-arr = [[6, 8], [1, 3], [2, 4], [9, 10]]
-arr.sort()
-res = []
-res.append(arr[0])
-print(arr)
-print(res)
-
-for i in range(1,len(arr)):
-    last = res[-1]
-    curr = arr[i] 
-    
+print(nums1)
