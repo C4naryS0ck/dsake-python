@@ -126,7 +126,7 @@ for _ in range(k):
 print(nums)
 
 """
-
+"""
 nums1 = [1,2,3,0,0,0] 
 nums2 = [2,5,6]
 nums1 = nums1+nums2
@@ -138,3 +138,16 @@ for i in range(len(nums1)-1,-1,-1):
         del nums1[i]
 
 print(nums1)
+"""
+
+nums = [4,1,2,1,2] 
+seen = {} 
+count = 0
+for i in range(len(nums)): 
+    number = nums[i] 
+    if number in seen:
+        count += 1
+    seen[nums[i]] = i
+
+print(count) 
+print(number)
